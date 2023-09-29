@@ -85,3 +85,8 @@ p {
   color: MintCream;
   letter-spacing: .5px;
 }
+
+.main_image {
+  width: 90%;
+  border: #ffffff;
+}
