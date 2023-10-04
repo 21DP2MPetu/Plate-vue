@@ -1,7 +1,8 @@
 
 /* NAVBAR */
 
-.navbar {
+/* FIRST BUTTON */
+.button_default {
   background-color: rgb(170, 238, 204);
   border: 1px solid transparent;
   border-radius: .75rem;
@@ -16,6 +17,7 @@
 
   padding: .75rem 1.2rem;
   margin-left: 5px;
+  margin-top: 30px;
 
   text-align: center;
   text-decoration: none #6B7280 solid;
@@ -29,18 +31,111 @@
   width: auto;
 }
 
-.navbar:hover {
+.button_default:hover {
   background-color: rgb(93, 235, 164);
 }
 
-.navbar:focus {
+.button_default:focus {
   box-shadow: none;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
+/* SECOND BUTTON */
+.button_light_blue {
+  background-color: rgb(55, 201, 238);
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+  padding: .75rem 1.2rem;
+  margin-left: 5px;
+  margin-top: 30px;
+
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button_light_blue:hover {
+  background-color: rgb(16, 193, 238);
+}
+
+.button_light_blue:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* HEADER STYLES */
+
+/* LIGHT BLUE */
+h1.light_blue {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(55, 201, 238);
+  outline: none;
+  text-align: center;
+}
+
+h1.light_blue:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+/* HEADER DEFAULT */
+h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(170, 238, 204);
+  outline: none;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+
+
+
+
+/* TEST */
+.nav_main {
+  display: flex;
+}
+
+.first {
+  flex: auto;
+}
+
 @media (min-width: 768px) {
-  .navbar {
+  .navbar_main_button {
     padding: .75rem 1.5rem;
   }
 }
@@ -60,24 +155,6 @@ body {
   align-items: center;
 }
 
-h1 {
-  font-size: 120px;
-  text-transform: uppercase;
-  font-family: 'Gambetta', serif;
-  letter-spacing: -3px;
-  transition: 700ms ease;
-  font-variation-settings: "wght" 311;
-  margin-bottom: 0.8rem;
-  color: rgb(170, 238, 204);
-  outline: none;
-  text-align: center;
-}
-
-h1:hover {
-  font-variation-settings: "wght" 582; 
-  letter-spacing: 1px;
-}
-
 p {
   font-size: 1.2em;
   line-height: 150%;
@@ -89,4 +166,12 @@ p {
 .main_image {
   width: 90%;
   border: #ffffff;
+}
+
+.correct {
+  color: #09db09;
+}
+
+.wrong {
+  color: #db0909;
 }

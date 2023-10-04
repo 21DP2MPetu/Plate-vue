@@ -1,15 +1,14 @@
+
+<script setup>
+  function MyTest() {
+    console.log("Works");
+  }
+</script>
+
 <template>
     <div class="container">
-      <h1 contenteditable>The Real Durak</h1>
-      <p>The game with crazy experience!</p>
-      <img class="main_image" src="../assets/images/durak_image.png" alt="durak">
+      <h1>Durak</h1>
+      <p>Play with friends and enjoy!</p>
+      <RouterLink class="button_default" to="/game">START</RouterLink>
     </div>
-    </template>
-    
-    <style>
-    
-    </style>
-    
-    <script>
-    
-    </script>
+</template>
