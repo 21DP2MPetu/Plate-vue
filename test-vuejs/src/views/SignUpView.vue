@@ -55,7 +55,7 @@
     }
 
     function CheckUsername() {
-        if (username.length < 8) {
+        if (username.length < 4) {
             return false;
         } else {
             return true;
