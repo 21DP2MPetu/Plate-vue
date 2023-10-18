@@ -6,8 +6,8 @@
       this.ruka = []
     }
 
-    giveCards(_6_cards_array) {
-      this.ruka = _6_cards_array;
+    giveCards(arr) {
+      this.ruka = arr;
     }
   }
 
@@ -33,7 +33,7 @@
 
   function PrintArray(array) {
     for (var i = 0; i < array.length; i++) {
-      console.log(array[i]);
+      console.log(PrintName(array[i]));
     }
   }
 
@@ -63,7 +63,7 @@
 
     switch (karta[1]) {
       case 1:
-        znachenije = "A";
+        znachenije = "Tuz";
         break;
       case 2:
         znachenije = "2";
@@ -107,10 +107,9 @@
   }
   
   var koloda = new Koloda();
+  var player = new Player();
   koloda.shuffle();
-  for (var i = 0; i < 10; i++) {
-    console.log("Card Taken:", PrintName(koloda.takeCard()));
-  }
+  PrintArray(player.ruka);
 
 </script>
 

@@ -14,6 +14,7 @@ import { RouterLink, RouterView } from 'vue-router';
         <div class="second">
           <RouterLink class="button_light_blue" to="/sign_up">Sign Up</RouterLink>
           <RouterLink class="button_light_blue" to="/sign_in">Sign In</RouterLink>
+          <RouterLink class="button_light_blue" to="/account">Guest</RouterLink>
         </div>
         
 

@@ -1,9 +1,14 @@
 <script setup>
   var username;
   var password;
+  var isAdmin;
 
   function SignIn() {
-    console.log(username, "\n", password);
+    if (username == "admin" || password == "0000") {
+      isAdmin = true;
+      console.log("admin");
+    }
+
   }
 </script>
 
