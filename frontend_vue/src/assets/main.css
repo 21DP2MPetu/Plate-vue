@@ -179,3 +179,9 @@ p {
 #account {
   
 }
+
+#calorie {
+  border: 5px;
+  border-style: solid;
+  border-color: #ffffff;
+}
