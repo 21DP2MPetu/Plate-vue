@@ -1,5 +1,141 @@
+/* TABLE */
+
+.table_component {
+  overflow: auto;
+  width: 100%;
+}
+
+.table_component table {
+  border: 1px solid #dededf;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+}
+
+.table_component caption {
+  caption-side: top;
+  text-align: left;
+}
+
+.table_component th {
+  border: 1px solid #dededf;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.table_component td {
+  border: 1px solid #dededf;
+  background-color: #292929;
+  color: #d9d9d9;
+  padding: 5px;
+}
 
 /* NAVBAR */
+.small_text {
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
+  color: MintCream;
+  letter-spacing: .5px;
+}
+/* BUTTON JOURNEY */
+.button_journey {
+  background-color: rgb(233, 235, 115);
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+  padding: .75rem 1.2rem;
+  margin-left: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button_journey:hover {
+  background-color: rgb(234, 236, 71);
+}
+
+.button_journey:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+
+/* Journey H1 */
+.journey_h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(233, 235, 115);
+  outline: none;
+  text-align: center;
+}
+
+.journey_h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+/* BUTTON SMALLL */
+.button_small {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button_small:hover,
+.button_small:focus {
+  opacity: .75;
+}
 
 /* FIRST BUTTON */
 .button_default {
@@ -84,7 +220,7 @@
 /* HEADER STYLES */
 
 /* LIGHT BLUE */
-h1.light_blue {
+.light_blue {
   font-size: 120px;
   text-transform: uppercase;
   font-family: 'Gambetta', serif;
@@ -97,7 +233,7 @@ h1.light_blue {
   text-align: center;
 }
 
-h1.light_blue:hover {
+.light_blue:hover {
   font-variation-settings: "wght" 582; 
   letter-spacing: 1px;
 }
@@ -174,10 +310,6 @@ p {
 
 .wrong {
   color: #db0909;
-}
-
-#account {
-  
 }
 
 #calorie {

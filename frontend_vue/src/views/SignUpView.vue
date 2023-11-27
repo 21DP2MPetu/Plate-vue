@@ -74,19 +74,20 @@ import AuthentificationServices from '@/services/AuthentificationServices.js'
 export default {
     data () {
         return {
-            'email': 'abc',
-            'username': 'abs',
-            'password': '123456',
+            'email': '',
+            'username': '',
+            'password': '',
 
         }
     },
     methods: {
-        SignUp () {
-            AuthentificationServices.register({
+        async SignUp () {
+            const response = await AuthentificationServices.register({
                 email: this.email,
                 username: this.username,
                 password: this.password
             })
+            console.log(response.data)
         }
     }
 }

@@ -1,14 +1,9 @@
 <script setup>
   var username;
   var password;
-  var isAdmin;
 
-  function SignIn() {
-    if (username == "admin" || password == "0000") {
-      isAdmin = true;
-      console.log("admin");
-    }
-
+  function SignInGuest() {
+    console.log("Signed as Guest")
   }
 </script>
 
